@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "cppStandard": "c++23",
+            "name": "Mac"
+        }
+    ],
+    "version": 4
+}
