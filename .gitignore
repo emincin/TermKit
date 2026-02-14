@@ -1,6 +1,7 @@
 .DS_Store
 a.out
 a
+main
 CMakeFiles/
 CMakeScripts/
 CMakeCache.txt
