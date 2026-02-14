@@ -2,6 +2,9 @@
 a.out
 a
 CMakeFiles/
+CMakeScripts/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
+*.xcodeproj
+build/
