@@ -6,5 +6,6 @@ CMakeScripts/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
+*.dSYM
 *.xcodeproj
 build/
