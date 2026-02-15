@@ -8,6 +8,10 @@ set(SOURCE_FILES
     main.cpp
 )
 
+add_compile_options(
+    -g
+)
+
 add_executable(termkit
     ${SOURCE_FILES}
 )
