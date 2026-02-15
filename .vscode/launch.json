@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "MIMode": "lldb",
+            "cwd": "${fileDirname}",
+            "name": "C++ (LLDB)",
+            "program": "${workspaceFolder}/Source/TermKit/termkit",
+            "request": "launch",
+            "type": "cppdbg"
+        }
+    ],
+    "version": "0.2.0"
+}
