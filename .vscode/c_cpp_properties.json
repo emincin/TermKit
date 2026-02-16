@@ -2,6 +2,9 @@
     "configurations": [
         {
             "cppStandard": "c++23",
+            "includePath": [
+                "Source/TermKit/quickjs"
+            ],
             "name": "Mac"
         }
     ],
