@@ -15,3 +15,5 @@ add_compile_options(
 add_executable(termkit
     ${SOURCE_FILES}
 )
+
+add_subdirectory(quickjs)
