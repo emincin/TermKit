@@ -17,3 +17,7 @@ add_executable(termkit
 )
 
 add_subdirectory(quickjs)
+
+target_link_libraries(termkit PRIVATE
+    quickjs
+)
