@@ -1,4 +1,8 @@
 #include "Terminal.hpp"
+#if defined(IS_POSIX)
+#include <termios.h>
+#include <unistd.h>
+#endif
 
 namespace TermKit {
 
