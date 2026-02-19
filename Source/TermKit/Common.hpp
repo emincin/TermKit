@@ -5,6 +5,10 @@
 #define IS_MACOS 1
 #endif
 
+#if defined(IS_LINUX) || defined(IS_MACOS)
+#define IS_POSIX 1
+#endif
+
 #define function auto
 #define let auto
 
