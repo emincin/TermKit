@@ -8,6 +8,7 @@ namespace TermKit {
 class Terminal {
 public:
     static function enableRawMode() -> bool;
+    static function disableRawMode() -> bool;
 };
 
 } // namespace TermKit
