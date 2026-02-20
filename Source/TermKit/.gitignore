@@ -1,3 +1,4 @@
 termkit
 quickjs/*
 !quickjs/CMakeLists.txt
+!quickjs/README.md
