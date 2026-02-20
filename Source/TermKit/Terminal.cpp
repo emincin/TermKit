@@ -28,6 +28,12 @@ function Terminal::disableRawMode() -> bool {
     return false;
 }
 
+function Terminal::read(char* s, usize n) -> isize {
+#if defined(IS_POSIX)
+#endif
+    return 0;
+}
+
 function Terminal::write(const char* s, usize n) -> isize {
 #if defined(IS_POSIX)
 #endif
