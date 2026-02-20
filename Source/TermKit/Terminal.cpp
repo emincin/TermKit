@@ -35,9 +35,7 @@ function Terminal::write(const char* s, usize n) -> isize {
 }
 
 function Terminal::write(StringView sv) -> isize {
-#if defined(IS_POSIX)
-#endif
-    return 0;
+    return Terminal::write(sv.data(), sv.size());
 }
 
 } // namespace TermKit
