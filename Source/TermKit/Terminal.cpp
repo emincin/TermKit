@@ -8,6 +8,10 @@ namespace TermKit {
 
 function Terminal::enableRawMode() -> bool {
 #if defined(IS_POSIX)
+    int ret = 0;
+    struct termios io = {0};
+    ret = tcgetattr(STDIN_FILENO, &io);
+    ret = tcsetattr(STDIN_FILENO, TCSANOW, &io);
     return true;
 #endif
     return false;
@@ -15,6 +19,10 @@ function Terminal::enableRawMode() -> bool {
 
 function Terminal::disableRawMode() -> bool {
 #if defined(IS_POSIX)
+    int ret = 0;
+    struct termios io = {0};
+    ret = tcgetattr(STDIN_FILENO, &io);
+    ret = tcsetattr(STDIN_FILENO, TCSANOW, &io);
     return true;
 #endif
     return false;
