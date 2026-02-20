@@ -2,6 +2,8 @@
 #define TERMKIT_COMMON_HPP
 
 #include <cstdint>
+#include <string>
+#include <string_view>
 
 #if defined(__APPLE__) && defined(__MACH__)
 #define IS_MACOS 1
@@ -28,5 +30,8 @@ using u64 = std::uint64_t;
 
 using isize = std::intptr_t;
 using usize = std::uintptr_t;
+
+using String = std::string;
+using StringView = std::string_view;
 
 #endif
