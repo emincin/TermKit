@@ -28,4 +28,10 @@ function Terminal::disableRawMode() -> bool {
     return false;
 }
 
+function Terminal::write(StringView sv) -> isize {
+#if defined(IS_POSIX)
+#endif
+    return 0;
+}
+
 } // namespace TermKit
