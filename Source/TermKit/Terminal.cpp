@@ -1,4 +1,5 @@
 #include "Terminal.hpp"
+
 #if defined(IS_POSIX)
 #include <termios.h>
 #include <unistd.h>
@@ -30,12 +31,16 @@ function Terminal::disableRawMode() -> bool {
 
 function Terminal::read(char* s, usize n) -> isize {
 #if defined(IS_POSIX)
+    ssize_t number = ::read(STDIN_FILENO, s, n);
+    return number;
 #endif
     return 0;
 }
 
 function Terminal::write(const char* s, usize n) -> isize {
 #if defined(IS_POSIX)
+    ssize_t number = ::write(STDOUT_FILENO, s, n);
+    return number;
 #endif
     return 0;
 }
