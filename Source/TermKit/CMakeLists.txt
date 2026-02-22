@@ -5,6 +5,7 @@ project(TermKit)
 set(CMAKE_CXX_STANDARD 23)
 
 set(SOURCE_FILES
+    JSBind.cpp
     Terminal.cpp
     main.cpp
 )
