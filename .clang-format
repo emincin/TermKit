@@ -1,3 +1,4 @@
+# ClangFormat: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
 AccessModifierOffset: -4
 AllowShortFunctionsOnASingleLine: None
 AllowShortLambdasOnASingleLine: None
