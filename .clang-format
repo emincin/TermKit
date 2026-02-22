@@ -3,6 +3,7 @@ AllowShortFunctionsOnASingleLine: None
 AllowShortLambdasOnASingleLine: None
 BreakBeforeBraces: Attach
 ColumnLimit: 80
+FixNamespaceComments: true
 IndentCaseLabels: true
 IndentWidth: 4
 PointerAlignment: Left
