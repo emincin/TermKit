@@ -1,4 +1,5 @@
 #include "Common.hpp"
+#include "JSBind.hpp"
 #include "Terminal.hpp"
 
 using namespace TermKit;
