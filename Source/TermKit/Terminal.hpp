@@ -7,6 +7,7 @@ namespace TermKit {
 
 class Terminal {
 public:
+    Terminal() = delete;
     static function enableRawMode() -> bool;
     static function disableRawMode() -> bool;
     static function read(char* s, usize n) -> isize;
