@@ -10,3 +10,12 @@ Makefile
 *.dSYM
 *.xcodeproj
 build/
+.vs/
+Debug/
+MinSizeRel/
+Release/
+RelWithDebInfo/
+*.slnx
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
