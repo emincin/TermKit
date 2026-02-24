@@ -4,6 +4,12 @@ project(TermKit)
 
 set(CMAKE_CXX_STANDARD 23)
 
+set(HEADER_FILES
+    Common.hpp
+    JSBind.hpp
+    Terminal.hpp
+)
+
 set(SOURCE_FILES
     JSBind.cpp
     Terminal.cpp
@@ -15,6 +21,7 @@ add_compile_options(
 )
 
 add_executable(termkit
+    ${HEADER_FILES}
     ${SOURCE_FILES}
 )
 
