@@ -1,6 +1,7 @@
 #include "Common.hpp"
 #include "JSBind.hpp"
 #include "Terminal.hpp"
+#include "Utils.hpp"
 
 using namespace TermKit;
 
@@ -8,6 +9,7 @@ function testRawMode() {
     let ok = false;
     ok = Terminal::enableRawMode();
     while (true) {
+        let s = Terminal::read(1024);
     }
     ok = Terminal::disableRawMode();
 }
@@ -17,6 +19,7 @@ function parseArgs(int argc, char** argv) {
         return;
     }
     if (argc == 1) {
+        testRawMode();
     } else if (argc == 2) {
     } else if (argc == 3) {
     }
