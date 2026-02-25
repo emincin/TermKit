@@ -8,6 +8,7 @@ set(HEADER_FILES
     Common.hpp
     JSBind.hpp
     Terminal.hpp
+    Utils.hpp
 )
 
 set(SOURCE_FILES
