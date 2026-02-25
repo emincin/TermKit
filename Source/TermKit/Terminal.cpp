@@ -37,6 +37,12 @@ function Terminal::read(char* s, usize n) -> isize {
     return 0;
 }
 
+function Terminal::read(usize capacity) -> String {
+    let s = String(capacity, 0);
+    let number = Terminal::read(s.data(), capacity);
+    return s;
+}
+
 function Terminal::write(const char* s, usize n) -> isize {
 #if defined(IS_POSIX)
     ssize_t number = ::write(STDOUT_FILENO, s, n);
