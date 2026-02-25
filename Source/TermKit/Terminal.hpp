@@ -11,6 +11,7 @@ public:
     static function enableRawMode() -> bool;
     static function disableRawMode() -> bool;
     static function read(char* s, usize n) -> isize;
+    static function read(usize capacity) -> String;
     static function write(const char* s, usize n) -> isize;
     static function write(StringView sv) -> isize;
 };
