@@ -13,6 +13,7 @@ set(HEADER_FILES
 set(SOURCE_FILES
     JSBind.cpp
     Terminal.cpp
+    Utils.cpp
     main.cpp
 )
 
