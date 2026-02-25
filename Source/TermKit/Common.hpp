@@ -13,6 +13,10 @@
 #define IS_POSIX 1
 #endif
 
+#if defined(WIN32) || defined(_WIN32)
+#define IS_WINDOWS 1
+#endif
+
 #define function auto
 #define let auto
 
