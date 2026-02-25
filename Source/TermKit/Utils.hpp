@@ -8,6 +8,7 @@ namespace TermKit {
 class Utils {
 public:
     Utils() = delete;
+    static function isPrintableChar(char c) -> bool;
 };
 
 } // namespace TermKit
