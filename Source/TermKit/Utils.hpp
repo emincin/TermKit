@@ -1,0 +1,3 @@
+#ifndef TERMKIT_UTILS_HPP
+#define TERMKIT_UTILS_HPP
+#endif
