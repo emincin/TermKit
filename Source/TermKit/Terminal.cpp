@@ -37,9 +37,9 @@ function Terminal::read(char* s, usize n) -> isize {
     return 0;
 }
 
-function Terminal::read(usize capacity) -> String {
-    let s = String(capacity, 0);
-    let number = Terminal::read(s.data(), capacity);
+function Terminal::read(usize n) -> String {
+    let s = String(n, 0);
+    let number = Terminal::read(s.data(), n);
     return s;
 }
 
