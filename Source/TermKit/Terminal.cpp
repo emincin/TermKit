@@ -5,6 +5,11 @@
 #include <unistd.h>
 #endif
 
+#if defined(IS_WINDOWS)
+#define NONLS
+#include <Windows.h>
+#endif
+
 namespace TermKit {
 
 function Terminal::enableRawMode() -> bool {
