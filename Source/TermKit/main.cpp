@@ -10,6 +10,11 @@ function testRawMode() {
     ok = Terminal::enableRawMode();
     while (true) {
         let s = Terminal::read(1024);
+        for (char c : s) {
+            if (Utils::isPrintableChar(c)) {
+            } else {
+            }
+        }
     }
     ok = Terminal::disableRawMode();
 }
