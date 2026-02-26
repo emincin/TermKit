@@ -22,6 +22,8 @@ function Terminal::enableRawMode() -> bool {
     ret = tcsetattr(STDIN_FILENO, TCSANOW, &io);
     return true;
 #endif
+#if defined(IS_WINDOWS)
+#endif
     return false;
 }
 
@@ -35,6 +37,8 @@ function Terminal::disableRawMode() -> bool {
     ret = tcsetattr(STDIN_FILENO, TCSANOW, &io);
     return true;
 #endif
+#if defined(IS_WINDOWS)
+#endif
     return false;
 }
 
@@ -42,6 +46,8 @@ function Terminal::read(char* s, usize n) -> isize {
 #if defined(IS_POSIX)
     ssize_t number = ::read(STDIN_FILENO, s, n);
     return number;
+#endif
+#if defined(IS_WINDOWS)
 #endif
     return 0;
 }
@@ -59,6 +65,8 @@ function Terminal::write(const char* s, usize n) -> isize {
 #if defined(IS_POSIX)
     ssize_t number = ::write(STDOUT_FILENO, s, n);
     return number;
+#endif
+#if defined(IS_WINDOWS)
 #endif
     return 0;
 }
