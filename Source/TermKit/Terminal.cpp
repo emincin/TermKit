@@ -49,6 +49,9 @@ function Terminal::read(char* s, usize n) -> isize {
 function Terminal::read(usize n) -> String {
     let s = String(n, 0);
     let number = Terminal::read(s.data(), n);
+    if (number >= 0) {
+        s.resize(number);
+    }
     return s;
 }
 
