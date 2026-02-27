@@ -5,6 +5,8 @@
 
 using namespace TermKit;
 
+namespace {
+
 function testRawMode() {
     let ok = false;
     ok = Terminal::enableRawMode();
@@ -29,6 +31,8 @@ function parseArgs(int argc, char** argv) {
     } else if (argc == 3) {
     }
 }
+
+} // namespace
 
 int main(int argc, char** argv) {
     parseArgs(argc, argv);
