@@ -18,9 +18,12 @@ set(SOURCE_FILES
     main.cpp
 )
 
-add_compile_options(
-    -g
-)
+if(MSVC)
+else()
+    add_compile_options(
+        -g
+    )
+endif()
 
 add_executable(termkit
     ${HEADER_FILES}
