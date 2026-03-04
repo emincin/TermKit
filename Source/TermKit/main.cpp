@@ -14,7 +14,11 @@ function testRawMode() {
         let s = Terminal::read(1024);
         for (char c : s) {
             if (Utils::isPrintableChar(c)) {
+                let str = String(1, c);
+                Terminal::write(str);
             } else {
+                let str = std::to_string(c);
+                Terminal::write(str);
             }
         }
     }
