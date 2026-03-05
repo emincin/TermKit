@@ -2,6 +2,7 @@
 #include "JSBind.hpp"
 #include "Terminal.hpp"
 #include "Utils.hpp"
+#include "Vec2.hpp"
 #include <format>
 
 using namespace TermKit;
