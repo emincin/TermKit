@@ -75,4 +75,12 @@ function Terminal::write(StringView sv) -> isize {
     return Terminal::write(sv.data(), sv.size());
 }
 
+function Terminal::writeLine(StringView sv) -> isize {
+    let s = String();
+    s.reserve(sv.size() + 1);
+    s.append(sv);
+    s.push_back('\n');
+    return Terminal::write(s);
+}
+
 } // namespace TermKit
