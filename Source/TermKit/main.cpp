@@ -2,6 +2,7 @@
 #include "JSBind.hpp"
 #include "Terminal.hpp"
 #include "Utils.hpp"
+#include <format>
 
 using namespace TermKit;
 
@@ -10,6 +11,8 @@ namespace {
 function testRawMode() {
     let ok = false;
     ok = Terminal::enableRawMode();
+    let msg = std::format("Raw Mode: {}", ok);
+    Terminal::writeLine(msg);
     while (true) {
         let s = Terminal::read(1024);
         for (char c : s) {
