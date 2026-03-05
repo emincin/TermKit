@@ -14,6 +14,7 @@ public:
     static function read(usize n) -> String;
     static function write(const char* s, usize n) -> isize;
     static function write(StringView sv) -> isize;
+    static function writeLine(StringView sv) -> isize;
 };
 
 } // namespace TermKit
