@@ -15,6 +15,7 @@ set(SOURCE_FILES
     JSBind.cpp
     Terminal.cpp
     Utils.cpp
+    Vec2.cpp
     main.cpp
 )
 
