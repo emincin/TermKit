@@ -9,6 +9,7 @@ set(HEADER_FILES
     JSBind.hpp
     Terminal.hpp
     Utils.hpp
+    Vec2.hpp
 )
 
 set(SOURCE_FILES
